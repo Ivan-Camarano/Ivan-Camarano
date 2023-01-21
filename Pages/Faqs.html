@@ -5,97 +5,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Preguntas frecuentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <meta name="description" content="Mvd-Restobar- Preguntas frecuentes- Envios- Comida para celiacos- Metodos de pago- Horarios">
+    <title>Mvd-Restobar- Preguntas frecuentes</title>
 </head>
 
 <body>
     <header>
-        <h1>Mvd Restobar</h1>
-        <Nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li>Faqs</li>
-                <li><a href="Locales.html">Locales</a></li>
-            </ul>
-        </Nav>
+        <h1>Mvd Restobar Faqs</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">Faqs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Locales.html">Locales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <main>
-        <section class="Portada">
-            <h2>Preguntas frecuentes</h2>
-            <article>
-                <h3>¿Cuentan con productos para celiacos?</h3>
-                <p>Si, contamos con una pizza sin gluten y tambien con un pan sin gluten, ademas de las mejores
-                    practicas para evitar cualquier tipo de contaminacion</p>
-            </article>
+    <main class="portada">
+        <section>
+            <div class="d-flex justify-content-center">
+                <h2>Preguntas frecuentes</h2>
+            </div>
 
-            <article>
-                <h3>¿Que metodos de pago utilizan?</h3>
-                <p>Aceptamos varios métodos de pago para que elijas el que más te sirva: efectivo, VISA, Master, tickets
-                    alimentación, American Express, OCA y MercadoPago.</p>
-            </article>
-
-            <article>
-                <h3>¿Hacen envios?</h3>
-                <p>De momento trabajamos solo con Pedidos Ya, puedes hacer el pedido desde su aplicacion</p>
-            </article>
-
-            <article>
-                <h3>Lorem?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum rerum ad inventore, minus
-                    tenetur quis error nihil quaerat voluptatum laborum maxime debitis suscipit nemo iusto cum ipsam
-                    eveniet explicabo!</p>
-            </article>
-
-            <article>
-                <h3>Lorem?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum rerum ad inventore, minus
-                    tenetur quis error nihil quaerat voluptatum laborum maxime debitis suscipit nemo iusto cum ipsam
-                    eveniet explicabo!</p>
-            </article>
-
-            <article>
-                <h3>Lorem?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum rerum ad inventore, minus
-                    tenetur quis error nihil quaerat voluptatum laborum maxime debitis suscipit nemo iusto cum ipsam
-                    eveniet explicabo!</p>
-            </article>
-
-            <article>
-                <h3>Lorem?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum rerum ad inventore, minus
-                    tenetur quis error nihil quaerat voluptatum laborum maxime debitis suscipit nemo iusto cum ipsam
-                    eveniet explicabo!</p>
-            </article>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            <h2>¿Hacen envios?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <article class="accordion-body">
+                            <p><strong>De momento trabajamos solo con Pedidos Ya, puedes hacer el pedido desde su
+                                    aplicacion
+                                </strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            <h2>¿Cuentan con productos para celiacos?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingTwo">
+                        <article class="accordion-body">
+                            <p><strong>Si, contamos con una pizza sin gluten y tambien con un pan sin gluten, ademas de
+                                    las mejores
+                                    practicas para evitar cualquier tipo de contaminacion</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseThree">
+                            <h2>¿Que metodos de pago utilizan?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingThree">
+                        <article class="accordion-body">
+                            <p><strong>Aceptamos varios métodos de pago para que elijas el que más te sirva: efectivo,
+                                    VISA, Master, tickets
+                                    alimentación, American Express, OCA y MercadoPago</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFour">
+                            <h2>Horarios</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFour">
+                        <article class="accordion-body">
+                            <p></p><strong>Todos los dias de 12:00 a 23:00 viernes y sabados hasta 00:30</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseFive">
+                            <h2>¿Puedo pedir la hamburguesa sin pan?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingFive">
+                        <article class="accordion-body">
+                            <p><strong>La respuesta es sí. Podés pedir tu burger sin pan y viene con los toppings como ensalada aparte.</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSix">
+                            <h2>¿Hacen reservas?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingSix">
+                        <article class="accordion-body">
+                            <p><strong>Si, para hacer deberas llamar al local correspondiente</strong></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <article class="accordion-header" id="panelsStayOpen-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseSeven">
+                            <h2>¿Qué pasa si hice mal mi pedido?</h2>
+                        </button>
+                    </article>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="panelsStayOpen-headingSeven">
+                        <article class="accordion-body">
+                            <p><strong>Si hiciste mal tu pedido llámanos al local para que podamos corregirlo y puedas disfrutar tu burger como más te guste.</strong></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
 
-    <footer>
-        <div>
-            <article>
-                <h3>Local en centro</h3>
-                <p>18 de julio 2264 / tel 091456987</p>
-                <h3>Local en Pocitos</h3>
-                <p>Av Brasil 2563 / tel 098569825</p>
-                <h3>Local en Punta Carretas</h3>
-                <p>Ellauri 2145/ tel 096485236</p>
-            </article>
-        </div>
-        <div>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="Menu.html">Menu</a></li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li>Faqs</li>
-                <li><a href="Locales.html">Locales</a></li>
-            </ul>
+    <footer class="container-fluid">
+        <div class="row p-2">
+            <div class="col-lg-10">
+                <article>
+                    <h3>Local en centro</h3>
+                    <p>18 de julio 2264 / tel 091456987</p>
+                    <h3>Local en Pocitos</h3>
+                    <p>Av Brasil 2563 / tel 098569825</p>
+                    <h3>Local en Punta Carretas</h3>
+                    <p>Ellauri 2145/ tel 096485236</p>
+                </article>
+            </div>
+            <div class="col-lg-2 d-flex flex-column justify-content-end">
+                <article>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li>Faqs</li>
+                        <li><a href="Locales.html">Locales</a></li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

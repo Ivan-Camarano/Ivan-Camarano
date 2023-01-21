@@ -5,112 +5,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <meta name="description"
+        content="Mvd Restobar-Menu de pizzas y hamburguesas con distintos gustos-Pizza con muzzarella rucula pepperoni aceitunas-Hamburguesa con queso panceta pepinillo lechuga tomate-Los mejores precios">
+    <title>Mvd Restobar-Menu de pizzas y hamburguesas</title>
 </head>
 
 <body>
     <header>
-        <h1>Mvd Restobar</h1>
-        <Nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Menu</li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Faqs.html">Faqs</a></li>
-                <li><a href="Locales.html">Locales</a></li>
-            </ul>
-        </Nav>
+        <h1>Mvd Restobar Menu</h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Faqs.html">Faqs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Locales.html">Locales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-
-    <main>
-        <section class="Portada">
-            <h2>Nuestro Menu</h2>
-
-            <div>
-                <h3>Pizzas</h3>
-            </div>
-
-            <div>
-                <article class="tarjetaproducto">
-                    <img src="../Img/pizzamenu.jpg" alt="pizza">
-                    <h4>Pizza muzzarela</h4>
-                    <span>$200</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/pizzamenu.jpg" alt="pizza">
-                    <h4>Pizza muzzarela</h4>
-                    <span>$200</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/pizzamenu.jpg" alt="pizza">
-                    <h4>Pizza muzzarela</h4>
-                    <span>$200</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/pizzamenu.jpg" alt="pizza">
-                    <h4>Pizza muzzarela</h4>
-                    <span>$200</span>
-                </article>
-            </div>
-
-            <div>
-                <h3>Hamburguesas</h3>
-            </div>
-
-            <div>
-                <article class="tarjetaproducto">
-                    <img src="../Img/Burguermenu.jpg" alt="Hamburguesa">
-                    <h4>Hamburguesa completa</h4>
-                    <span>$150</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/Burguermenu.jpg" alt="Hamburguesa">
-                    <h4>Hamburguesa completa</h4>
-                    <span>$150</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/Burguermenu.jpg" alt="Hamburguesa">
-                    <h4>Hamburguesa completa</h4>
-                    <span>$150</span>
-                </article>
-
-                <article class="tarjetaproducto">
-                    <img src="../Img/Burguermenu.jpg" alt="Hamburguesa">
-                    <h4>Hamburguesa completa</h4>
-                    <span>$150</span>
-                </article>
-            </div>
+<!-- se me rompio un poco la estructura de las tarjetas, no me quedaron todas con la misma altura y no tuve tiempo de solucionarlo -->
+    <main class="portada">
+        <h2>Nuestro Menu</h2>
+        <section class="container-fluid">
+            <h2>Hamburguesas</h2>
+            <div class="d-flex row p-2 row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pepinillo.jpg" width="474" height="316" class="card-img-top"
+                            alt="hamburguesa con pepinillo">
+                        <div class="card-body">
+                            <h2 class="card-title">Hamburguesa con pepinillo</h2>
+                            <p class="card-text">Ketchup, cebolla, pepinillo, lechuga tomate <strong>$300</strong> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pollo.jpg" width="474" height="316" class="card-img-top"
+                            alt="Hamburguesa de pollo">
+                        <div class="card-body">
+                            <h2 class="card-title">Hamburguesa de pollo y panceta</h2>
+                            <p class="card-text">Mayonesa, cebolla, lechuga, tomate, panceta <strong>$300
+                                </strong></p>
+                        </div>
+                    </div>
+                </div>
         </section>
-    </main>
+        <section class="container-fluid">
+            <div class="d-flex row p-2 row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/conqueso.jpg" width="474" height="316" class="card-img-top"
+                            alt="hamburguesa con queso">
+                        <div class="card-body">
+                            <h2 class="card-title">Hamburguesa con queso</h2>
+                            <p class="card-text">Ketchup, mostaza, lechuga, tomate <strong>$300</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/panceta.jpg" width="474" height="316" class="card-img-top"
+                            alt="Hamburguesa completa">
+                        <div class="card-body">
+                            <h2 class="card-title">Hamburguesa completa</h2>
+                            <p class="card-text">Ketchup, mostaza, mayonesa, penillo, lechuga, tomate, panceta
+                                <strong>$350</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="container-fluid">
+            <h2>Pizzas</h2>
+            <div class="d-flex row p-2 row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pizzaconjamon.jpg" width="474" height="316" class="card-img-top"
+                            alt="Pizza con jamon">
+                        <div class="card-body">
+                            <h2 class="card-title">Pizza con jamon</h2>
+                            <p class="card-text">Muzzarella, salsa, jamon <strong>$500</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pizzapepperoni.jpg" width="474" height="316" class="card-img-top"
+                            alt="Pizza con pepperoni">
+                        <div class="card-body">
+                            <h2 class="card-title">Pizza con pepperoni</h2>
+                            <p class="card-text">Pepperoni, muzarella, salsa, aceitunas, champiñones
+                                <strong>$550</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="container-fluid">
+            <div class="d-flex row p-2 row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pizzamuzarela.jpg" width="474" height="316" class="card-img-top"
+                            alt="Pizza con muzarella">
+                        <div class="card-body">
+                            <h2 class="card-title">Pizza con muzarella</h2>
+                            <p class="card-text">Muzarella, salsa <strong>$450</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="../Img/pizzatomateyrucula.jpg" width="474" height="316" class="card-img-top"
+                            alt="Pizza tomate y rucula">
+                        <div class="card-body">
+                            <h2 class="card-title">Pizza con tomate y rucula</h2>
+                            <p>Muzarella, salsa, tomate, rucula <strong>$500</strong></p>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <footer>
-        <div>
-            <article>
-                <h3>Local en centro</h3>
-                <p>18 de julio 2264 / tel 091456987</p>
-                <h3>Local en Pocitos</h3>
-                <p>Av Brasil 2563 / tel 098569825</p>
-                <h3>Local en Punta Carretas</h3>
-                <p>Ellauri 2145/ tel 096485236</p>
-            </article>
-        </div>
-        <div>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li>Menu</li>
-                <li><a href="Nosotros.html">Nosotros</a></li>
-                <li><a href="Faqs.html">Faqs</a></li>
-                <li><a href="Locales.html">Locales</a></li>
-            </ul>
+    </main>
+    <footer class="container-fluid">
+        <div class="row p-2">
+            <div class="col-lg-10">
+                <article>
+                    <h3>Local en centro</h3>
+                    <p>18 de julio 2264 / tel 091456987</p>
+                    <h3>Local en Pocitos</h3>
+                    <p>Av Brasil 2563 / tel 098569825</p>
+                    <h3>Local en Punta Carretas</h3>
+                    <p>Ellauri 2145/ tel 096485236</p>
+                </article>
+            </div>
+            <div class="col-lg-2 d-flex flex-column justify-content-end">
+                <article>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li>Menu</li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li><a href="Faqs.html">Faqs</a></li>
+                        <li><a href="Locales.html">Locales</a></li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
