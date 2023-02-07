@@ -55,13 +55,21 @@ header nav ul {
   gap: 20px;
 }
 
+nav {
+  background-color: aqua;
+}
+
 footer {
   background-color: rgb(160, 157, 157);
   padding: 15px;
+}
+
+nav {
+  background-color: aqua;
 }
 
 .portada {
   background-color: rgb(197, 197, 197);
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=styles.css~.map */
